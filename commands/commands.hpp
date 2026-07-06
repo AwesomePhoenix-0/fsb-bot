@@ -1,0 +1,47 @@
+#ifndef COMMANDS_HPP
+#define COMMANDS_HPP
+
+#include <dpp/dpp.h>
+
+namespace Commands
+{
+    ///////////////////
+    ///// ban.cpp /////
+    ///////////////////
+
+    void ban
+    (
+        dpp::cluster                    &bot,
+        const dpp::interaction_create_t &event
+    );
+
+    ////////////////////
+    ///// ping.cpp /////
+    ////////////////////
+
+    void ping
+    (
+        const dpp::cluster              &bot,
+        const dpp::interaction_create_t &event
+    );
+
+    ////////////////////
+    ///// play.cpp /////
+    ////////////////////
+
+    void play
+    (
+        const dpp::interaction_create_t &event
+    );
+
+    /////////////////////
+    ///// rules.cpp /////
+    /////////////////////
+
+    void rules
+    (
+        const dpp::interaction_create_t &event
+    );
+}
+
+#endif
