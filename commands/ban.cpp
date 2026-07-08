@@ -113,7 +113,7 @@ void Commands::ban
 
     if (bot_member_it == guild -> members.end())
     {
-        event.reply(dpp::message(":warning: Failed to **find ФСБ** in the guild member list!").set_flags(dpp::m_ephemeral));
+        event.reply(dpp::message(":warning: Failed to **find ФСБ** in the guild members list!").set_flags(dpp::m_ephemeral));
         return;
     }
 

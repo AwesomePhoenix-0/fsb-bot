@@ -39,6 +39,12 @@ void Events::ready
             ban_command.add_option(dpp::command_option(dpp::co_string, "reason", "Reason of the deportation.", true));
             bot.global_command_create(ban_command);
 
+            // Command /kick.
+            dpp::slashcommand kick_command("kick", "Deport a member from the Discord server.", bot.me.id);
+            kick_command.add_option(dpp::command_option(dpp::co_user, "member", "Member to deport.", true));
+            kick_command.add_option(dpp::command_option(dpp::co_string, "reason", "Reason of the deportation.", true));
+            bot.global_command_create(kick_command);
+
             // Command /ping.
             bot.global_command_create(dpp::slashcommand("ping", "Get the latency of the bot.", bot.me.id));
 

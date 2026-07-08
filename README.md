@@ -8,7 +8,7 @@ Discord server using the bot: https://discord.gg/zkJ75UDVEV. <br/>
 - MariaDB server.
 
 # ⚙️ Configuration
-In the `./config` server, you must create the file `fsb.config` and sets the config in there. <br/>
+In the `./config` server, you must create the file `fsb.config` and set the following config in there. <br/>
 ``` config
 TOKEN=bot_token_here
 DB_NAME=name_of_your_database
