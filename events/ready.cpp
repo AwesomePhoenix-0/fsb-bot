@@ -54,6 +54,9 @@ void Events::ready
             // Command /rules.
             bot.global_command_create(dpp::slashcommand("rules", "Display Discord and Minecraft server rules.", bot.me.id));
 
+			// Command /help.
+            bot.global_command_create(dpp::slashcommand("help", "Give info about the bot and commands.", bot.me.id));
+
             // Bot status handler.
             const std::vector<std::string> status =
             {
