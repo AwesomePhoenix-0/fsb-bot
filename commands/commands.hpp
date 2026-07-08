@@ -15,6 +15,16 @@ namespace Commands
         const dpp::interaction_create_t &event
     );
 
+    /////////////////////
+    ///// kick.cpp //////
+    /////////////////////
+
+    void kick
+    (
+        dpp::cluster                    &bot,
+        const dpp::interaction_create_t &event
+    );
+
     ////////////////////
     ///// ping.cpp /////
     ////////////////////
